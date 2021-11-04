@@ -29,4 +29,12 @@ describe(UniqueIdService.name, () => {
     expect(service.getNumberOfGeneratedUniqueIds()).toBe(2);
   });
 
+  it(`#${UniqueIdService.prototype.generateIdWithPrefix.name} should throw an exception when called blank`, () => {
+    const emptyValues = [null, undefined, ''];
+
+    emptyValues.forEach(value => {
+      expect(() => service.generateIdWithPrefix(value)).toThrow();
+    });
+  });
+
 });
