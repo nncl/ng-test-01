@@ -30,10 +30,12 @@ describe(UniqueIdService.name, () => {
   });
 
   it(`#${UniqueIdService.prototype.generateIdWithPrefix.name} should throw an exception when called blank`, () => {
-    const emptyValues = [null, undefined, '', '0'];
+    const emptyValues = [ null, undefined, '', '0', '1', 'app' ];
 
     emptyValues.forEach(value => {
-      expect(() => service.generateIdWithPrefix(value)).toThrow();
+      expect(() => service.generateIdWithPrefix(value))
+        .withContext(`Empty value: ${value}`)
+        .toThrow();
     });
   });
 
