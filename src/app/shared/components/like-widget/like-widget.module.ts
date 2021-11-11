@@ -6,6 +6,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [ LikeWidgetComponent ],
+  exports: [
+    LikeWidgetComponent
+  ],
   imports: [
     CommonModule,
     FontAwesomeModule
