@@ -23,4 +23,14 @@ describe(LikeWidgetComponent.name, () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should auto generate id when id input property is missing', () => {
+    expect(component.id).toBeTruthy();
+  });
+
+  it('should NOT generate id when id input property is present', () => {
+    const id = 'my-id';
+    component.id = id;
+    expect(component.id).toBe(id);
+  });
 });
