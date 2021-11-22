@@ -46,7 +46,7 @@ describe(LikeWidgetComponent.name, () => {
     component.like();
   });
 
-  it(`#${LikeWidgetComponent.prototype.like.name} should trigger emission when called`, () => {
+  it(`#${LikeWidgetComponent.prototype.like.name} should trigger emission when called via spy`, () => {
     spyOn(component.liked, 'emit');
     fixture.detectChanges();
     component.like();
