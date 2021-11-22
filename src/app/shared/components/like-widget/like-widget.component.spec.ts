@@ -17,7 +17,6 @@ describe(LikeWidgetComponent.name, () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(LikeWidgetComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
   });
 
   it('should create', () => {
@@ -25,12 +24,14 @@ describe(LikeWidgetComponent.name, () => {
   });
 
   it('should auto generate id when id input property is missing', () => {
+    fixture.detectChanges();
     expect(component.id).toBeTruthy();
   });
 
   it('should NOT generate id when id input property is present', () => {
     const id = 'my-id';
     component.id = id;
+    fixture.detectChanges();
     expect(component.id).toBe(id);
   });
 });
