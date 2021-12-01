@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "test-common": "ng test --browsers Chrome,Firefox",
+    "test-common": "ng test --browsers Chrome,Firefox,Safari",
     "test-safari": "ng test --browsers Safari",
     "lint": "ng lint",
     "e2e": "ng e2e"
