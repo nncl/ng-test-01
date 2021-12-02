@@ -8,7 +8,7 @@
     "test": "ng test",
     "test-common": "ng test --browsers Chrome,Firefox,Safari",
     "test-safari": "ng test --browsers Safari",
-    "test-ci": "ng test --watch=false --browsers ChromeHeadless,FirefoxHeadless",
+    "test-ci": "ng test --watch=false --browsers ChromeHeadless,FirefoxSemCabeca",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
