@@ -9,6 +9,7 @@
     "test-common": "ng test --browsers Chrome,Firefox,Safari",
     "test-safari": "ng test --browsers Safari",
     "test-ci": "ng test --watch=false --reporters junit --browsers ChromeHeadless,FirefoxSemCabeca",
+    "test-coverage": "ng test --watch=false --sourceMap=true --codeCoverage=true --browsers ChromeHeadless",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
