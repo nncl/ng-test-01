@@ -1,7 +1,5 @@
 # NgTest1
 
-// TODO TO START https://cursos.alura.com.br/course/angular-testes-automatizados-jasmin-karma/task/85871
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.1.
 
 ## Development server
